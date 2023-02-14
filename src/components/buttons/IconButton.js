@@ -22,7 +22,7 @@ const IconButton = ({
       onClick={onClick}
     >
       <Image src={icon} width={width} height={height} />
-      {text && <span className="icon__btn--text">{text}</span>}
+      {text && <span className="icon__btn--text btn__text__3">{text}</span>}
     </button>
   );
 };

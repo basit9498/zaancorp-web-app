@@ -38,7 +38,7 @@ const WorkFlowStatus = () => {
       <div className="workflow__section--div">
         <div className="workflow__avatar__options">
           {/* Heading */}
-          <h2>Workflow</h2>
+          <h2 className="heading__1">Workflow</h2>
           {/* option */}
           <div className="workflow__options">
             <RoundIconButton icon={"/images/ws_1.svg"} type="primary" />
