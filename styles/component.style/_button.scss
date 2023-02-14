@@ -1,0 +1,55 @@
+// Button Icon
+.icon__btn--md {
+  // max-width: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  height: 40px;
+}
+.icon__btn--sm {
+  // width: 36px;
+  height: 36px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.icon__btn--flex {
+  display: inline-flex;
+  align-items: center;
+}
+.icon__btn {
+  border-radius: 8px;
+  cursor: pointer;
+}
+.primary__icon--btn {
+  background-color: $primary-color;
+  border: none;
+}
+.secondary__icon--btn {
+  border: 1px solid rgba(7, 15, 33, 0.1);
+  background-color: $main-white-color;
+}
+.icon__btn--text {
+  margin-left: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+
+  color: $main-black-color;
+}
+
+// Rounded--btn
+.icon__btn--rounded {
+  border-radius: 50px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+  padding: 6px;
+}
+.primary__icon--btn--rounded {
+  background-color: $primary-color;
+}
+.secondary__icon--btn--rounded {
+  background-color: $main-gray-color;
+}

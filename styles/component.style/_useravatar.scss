@@ -1,0 +1,19 @@
+.avatar__notification {
+  position: relative;
+  .avatar__notification--count {
+    position: absolute;
+    bottom: 4px;
+    right: 0px;
+    padding: 2px 4px;
+    width: 14px;
+    height: 14px;
+    background-color: $primary-color;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: #ffffff;
+    border-radius: 50px;
+  }
+}

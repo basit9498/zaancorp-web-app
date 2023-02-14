@@ -1,0 +1,113 @@
+/*
+  Functions
+*/
+
+@mixin scroll-y($width: 0px, $radius: 0px, $handle-color: #aeb1b8) {
+  /* width */
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $handle-color;
+    border-radius: $radius;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+@mixin scroll-x($height: 0px, $radius: 0px, $handle-color: #aeb1b8) {
+  /* width */
+  &::-webkit-scrollbar {
+    height: $height;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $handle-color;
+    border-radius: $radius;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+/*
+    Themes Colors 
+**/
+
+$primary-color: #0e8cff;
+
+$main-body-color: #f9fbfe;
+$main-white-color: #ffffff;
+$main-black-color: #070f21;
+$main-gray-color: #e6e7e9;
+$main-gray-400-color: rgba(7, 15, 33, 0.04);
+
+/*
+    Screens Size
+**/
+$fxl-screen: 1390px;
+// $xl-screen: 1280px;
+// $lg-screen: 1024px;
+// $xmd-screen: 801px;
+// $md-screen: 768px;
+// $sm-screen: 600px;
+// $xs-screen: 425px;
+// $xxs-screen: 375px;
+
+@mixin fxl-screen {
+  @media screen and (min-width: $fxl-screen) {
+    @content;
+  }
+}
+// @mixin xl-screen {
+//   @media screen and (min-width: $xl-screen) {
+//     @content;
+//   }
+// }
+// @mixin lg-screen {
+//   @media screen and (min-width: $lg-screen) {
+//     @content;
+//   }
+// }
+// @mixin xmd-screen {
+//   @media screen and (min-width: $xmd-screen) {
+//     @content;
+//   }
+// }
+// @mixin md-screen {
+//   @media screen and (min-width: $md-screen) {
+//     @content;
+//   }
+// }
+// @mixin sm-screen {
+//   @media screen and (min-width: $sm-screen) {
+//     @content;
+//   }
+// }
+// @mixin xs-screen {
+//   @media screen and (min-width: $xs-screen) {
+//     @content;
+//   }
+// }
+// @mixin xxs-screen {
+//   @media screen and (min-width: $xxs-screen) {
+//     @content;
+//   }
+// }

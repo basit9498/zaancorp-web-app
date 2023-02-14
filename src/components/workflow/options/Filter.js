@@ -1,0 +1,112 @@
+import { projectFilterData } from "@/src/helper/workflowdata/filterListData";
+import Image from "next/image";
+import React from "react";
+import CheckBox from "../../Form/CheckBox";
+
+const Filter = ({ showFilterHandler, type = "", data = [] }) => {
+  return (
+    <div
+      className={`filter__section ${
+        type === "playlist" ? "filter__playlistcard" : "filter__project"
+      }`}
+    >
+      {/* Header */}
+      <div className="filter__header">
+        <div className="header__title">
+          {type !== "playlist" && (
+            <Image src={"/images/pr_filter.svg"} width={20} height={20} />
+          )}
+
+          <span className="ml-8">Filters</span>
+        </div>
+        <Image
+          src={"/images/cs_close.svg"}
+          width={20}
+          height={20}
+          className="cursor__pointer"
+          onClick={showFilterHandler}
+        />
+      </div>
+
+      <div
+        className={`filter__group ${
+          type === "playlist"
+            ? "filter__group--height--playlist"
+            : "filter__group--height--project"
+        }`}
+      >
+        {/* Projects */}
+        {data?.projects && (
+          <div className="filter__list pt-20">
+            <h3>Project</h3>
+            <div className="list__options">
+              {data?.projects?.map((data) => {
+                return <CheckBox text={data} dotStatus={true} />;
+              })}
+            </div>
+            {type === "playlist" && (
+              <div className="filter__sub--show mt-12 cursor__pointer">
+                <span>Show all...</span>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Tags */}
+        {data?.tags && (
+          <div className="filter__list pt-24">
+            <h3>Tags</h3>
+            <div className="list__options">
+              {data?.tags?.map((data) => {
+                return <CheckBox text={data} dotStatus={false} bg={true} />;
+              })}
+            </div>
+            <div className="filter__sub--show mt-12 cursor__pointer">
+              <span>Show all...</span>
+            </div>
+          </div>
+        )}
+
+        {/* Cards */}
+        {data?.cards && (
+          <div className="filter__list pt-24">
+            <h3>Card</h3>
+            <div className="list__options">
+              {data?.cards?.map((data) => {
+                return <CheckBox text={data} dotStatus={false} bg={false} />;
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Assigned To */}
+        {data?.assigned && (
+          <div className="filter__list pt-24">
+            <h3>Assigned To</h3>
+            <div className="list__options">
+              {data?.assigned?.map((data) => {
+                return <CheckBox text={data.title} avatar={data.img} />;
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* filter Footer */}
+      <div className="filter__footer">
+        <div className="footer__left">
+          {type !== "playlist" && (
+            <button className="footer__btn">Save as View</button>
+          )}
+        </div>
+
+        <div className="footer__right">
+          <button className="footer__btn">Clear</button>
+          <button className="footer__btn ml-4">Apply</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Filter;

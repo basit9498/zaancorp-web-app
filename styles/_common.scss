@@ -1,0 +1,172 @@
+/**
+    Main Font "Inter", sans-serif" 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: $main-body-color;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box !important;
+  @include scroll-y();
+}
+
+* {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+/*
+  Image Rounded
+*/
+.avatar__rounded--50 {
+  border-radius: 50%;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+/*
+  cursor --pointer
+*/
+.cursor__pointer {
+  cursor: pointer;
+}
+/*
+Margin 
+*/
+.ml-4 {
+  margin-left: 4px;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+.ml-6 {
+  margin-left: 6px;
+}
+.ml-16 {
+  margin-left: 16px;
+}
+.mr-6 {
+  margin-right: 6px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+/*
+Border
+*/
+.border--right {
+  border-right: 1px solid rgba(7, 15, 33, 0.06);
+}
+
+// Padding
+.pad--right {
+  padding-right: 8px;
+}
+.pad--left {
+  padding-left: 8px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
+.pl-8 {
+  padding-left: 8px;
+}
+.pr-8 {
+  padding-right: 8px;
+}
+
+// Header Count
+
+@mixin user-count-box($bg-color: $main-white-color) {
+  margin-left: 4px;
+  padding: 4px 3px;
+  background: $bg-color;
+  border-radius: 4px;
+}
+
+/*
+  Scroll Bar 
+*/
+
+.scroll__bar {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/*
+  Dot Color
+*/
+.__dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.__dot--color--0 {
+  background: #ff3477;
+}
+.__dot--color--1 {
+  background: #ff9f1a;
+}
+.__dot--color--2 {
+  background: #6248ff;
+}
+.__dot--color--3 {
+  background: #8f76ff;
+}
+
+// bg-color
+
+.__bg--color--0 {
+  background-color: #ffeede;
+}
+.__bg--color--1 {
+  background-color: #ffdefc;
+}
+.__bg--color--2 {
+  background-color: #e4f5ff;
+}
+.__bg--color--3 {
+  background-color: #dde6fe;
+}
+
+/*
+  Width
+*/
+
+.width__200 {
+  width: 200px;
+}
+.width__257 {
+  width: 257px;
+}
