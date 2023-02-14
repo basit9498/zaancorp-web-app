@@ -3,16 +3,18 @@
 */
 .workflow__index--div {
   .workflow__body--main {
-    // For overflow
     width: 100%;
+
     overflow-x: scroll;
     @include scroll-x($height: 6px, $radius: 8px);
-    // border: 1px solid red;
+
+    overflow-y: hidden;
     height: calc(100vh - 144px);
   }
   .workflow__body {
     padding-top: 24px;
     padding-left: 29px;
+
     // width: 100%;
     display: flex;
     gap: 8px 8px;
@@ -76,9 +78,7 @@
   border-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
-  // OVer
-  // border: 1px solid green;
-  // height: 800px;
+  max-height: calc(100vh - 180px);
   display: flex;
   flex-direction: column;
 
@@ -111,23 +111,25 @@
   .playlist__activty {
     padding-top: 8px;
     padding-left: 8px;
-    padding-right: 8px;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 8px 0;
-    // min-height: 100%;
+    padding-right: 2px;
 
+    .playlist__activty--list--unselected-entry {
+      max-height: calc(100vh - 280px);
+    }
+    .playlist__activty--list--selected-entry {
+      max-height: calc(100vh - 380px);
+    }
     .playlist__activty--list {
       display: flex;
       flex-direction: column;
       gap: 8px 0;
+      padding-right: 6px;
 
-      // border: 1px solid red;
-      // height: 300px;
-      flex: 1;
+      // max-height: calc(100vh - 280px);
+
       overflow-y: scroll;
       overflow-x: hidden;
-      @include scroll-y($width: 1px);
+      @include scroll-y($width: 3px, $radius: 6px);
     }
   }
   .playlist__add {
@@ -141,8 +143,6 @@
 */
 
 .wf__acticity--div {
-  // width: 200px;
-  // padding: 8px;
   background: $main-white-color;
   border-radius: 8px;
   .wf__acticity {
@@ -684,6 +684,7 @@
 .ar__div {
   z-index: 9999;
   width: 297px;
+
   background: #eff2f5;
   border: 1px solid rgba(7, 15, 33, 0.1);
   box-shadow: 0px 12px 24px rgba(174, 178, 193, 0.2);
@@ -766,6 +767,11 @@
   .ar__activty {
     padding-top: 15px;
     padding-left: 20px;
+    padding-bottom: 16px;
+    // border: 1px solid red;
+    max-height: 471px;
+    overflow-y: scroll;
+    @include scroll-y($width: 4px, $radius: 6px);
     display: flex;
     flex-direction: column;
     gap: 12px 0px;

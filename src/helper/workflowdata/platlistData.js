@@ -338,4 +338,32 @@ export const playlistData = [
       },
     ],
   },
+  {
+    id: 5,
+    title: "Completed",
+    count: 1,
+    activity: [
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+        status: ["api.contactrm.com", "api.contactrm"],
+        created: "Created 3 days ago",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Completed",
+    count: 1,
+    activity: [
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+        status: ["api.contactrm.com", "api.contactrm"],
+        created: "Created 3 days ago",
+      },
+    ],
+  },
 ];

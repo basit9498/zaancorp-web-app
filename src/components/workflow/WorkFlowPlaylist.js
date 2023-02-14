@@ -79,7 +79,13 @@ const WorkFlowPlaylist = ({ data }) => {
 
       {/* Activity List */}
       <div className="playlist__activty">
-        <div className="playlist__activty--list">
+        <div
+          className={`playlist__activty--list ${
+            showAddActivty
+              ? "playlist__activty--list--selected-entry"
+              : "playlist__activty--list--unselected-entry"
+          }`}
+        >
           {data?.activity?.map((item) => {
             return <WorkFlowActivity data={item} className="width__200" />;
           })}

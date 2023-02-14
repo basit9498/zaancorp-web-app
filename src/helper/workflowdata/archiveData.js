@@ -19,6 +19,36 @@ export const archiveData = [
     title: "Design a website",
     created: "Created 3 days ago",
   },
+  {
+    about: "ContactRM",
+    showStatus: true,
+    title: "Design a website",
+    created: "Created 3 days ago",
+  },
+  {
+    about: "ContactRM",
+    showStatus: true,
+    title: "Design a website",
+    created: "Created 3 days ago",
+  },
+  {
+    about: "ContactRM",
+    showStatus: true,
+    title: "Design a website",
+    created: "Created 3 days ago",
+  },
+  {
+    about: "ContactRM",
+    showStatus: true,
+    title: "Design a website",
+    created: "Created 3 days ago",
+  },
+  {
+    about: "ContactRM",
+    showStatus: true,
+    title: "Design a website",
+    created: "Created 3 days ago",
+  },
 ];
 
 export const snoozeData = [
