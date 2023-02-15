@@ -63,6 +63,9 @@ $main-gray-400-color: rgba(7, 15, 33, 0.04);
 **/
 $xl-screen: 1200px;
 $lg-screen: 1024px;
+$md-screen: 980px;
+$sm-screen: 768px;
+$xs-screen: 525px;
 
 @mixin xl-screen {
   @media screen and (max-width: $xl-screen) {
@@ -71,6 +74,21 @@ $lg-screen: 1024px;
 }
 @mixin lg-screen {
   @media screen and (max-width: $lg-screen) {
+    @content;
+  }
+}
+@mixin md-screen {
+  @media screen and (max-width: $md-screen) {
+    @content;
+  }
+}
+@mixin sm-screen {
+  @media screen and (max-width: $sm-screen) {
+    @content;
+  }
+}
+@mixin xs-screen {
+  @media screen and (max-width: $xs-screen) {
     @content;
   }
 }

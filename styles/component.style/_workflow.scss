@@ -5,7 +5,10 @@
   .workflow__body--main {
     @include lg-screen() {
       height: calc(100vh - 184px);
-      border: 1px solid red;
+      width: 100vw;
+    }
+    @include sm-screen() {
+      height: calc(100vh - 220px);
     }
     // width: 100%;
     width: calc(100vw - 280px);
@@ -26,9 +29,6 @@
     gap: 8px 8px;
     align-items: baseline;
     // align-items: flex-start;
-
-    // border: 1px solid red;
-    // max-width: 1170px;
   }
 }
 
@@ -64,10 +64,18 @@
         // flex: 1;
         width: 100%;
       }
+      @include xs-screen() {
+        flex-wrap: wrap;
+        gap: 8px 0px;
+      }
+
       display: flex;
       // border: 1px solid firebrick;
 
       h2 {
+        @include xs-screen() {
+          width: 100%;
+        }
         color: $main-black-color;
       }
       .workflow__options {
@@ -84,7 +92,7 @@
       margin-left: 20px;
       display: flex;
       gap: 0px 4px;
-      // border: 1px solid red;
+
       align-self: center;
     }
 
@@ -135,16 +143,20 @@
     .playlist__activty--list--unselected-entry {
       @include lg-screen() {
         max-height: calc(100vh - 300px);
-        border: 1px solid red;
+      }
+      @include sm-screen() {
+        max-height: calc(100vh - 350px);
       }
       max-height: calc(100vh - 280px);
     }
     .playlist__activty--list--selected-entry {
       @include lg-screen() {
-        max-height: calc(100vh - 400px);
-        border: 1px solid red;
+        max-height: calc(100vh - 540px);
       }
-      max-height: calc(100vh - 380px);
+      @include sm-screen() {
+        max-height: calc(100vh - 580px);
+      }
+      max-height: calc(100vh - 500px);
     }
     .playlist__activty--list {
       display: flex;
@@ -723,7 +735,7 @@
     padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 16px;
-    // border: 1px solid red;
+
     max-height: 471px;
     overflow-y: scroll;
     @include scroll-y($width: 4px, $radius: 6px);

@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { SideBarMenuData } from "@/src/helper/layoutdata/sideBarData";
 import Link from "next/link";
 
 const SideBar = () => {
+  const [showSideBar, setShowSideBar] = useState(false);
   return (
-    <aside className="aside__section scroll__bar">
+    <aside
+      className={`aside__section scroll__bar ${
+        showSideBar ? "aside__section--show" : "aside__section--hide"
+      }`}
+    >
       {/* Logo */}
       <div className="aside__logo">
         <Image src={"/images/zaancrop_logo.svg"} width={127} height={22} />
         <Image
-          className="logo__arrow"
+          className={`logo__arrow ${!showSideBar && "logo__arrow--768--media"}`}
           src={"/images/sidebar_double_arrow.svg"}
           width={20}
           height={20}
+          onClick={() => {
+            setShowSideBar(!showSideBar);
+          }}
         />
       </div>
       {/* Menu */}

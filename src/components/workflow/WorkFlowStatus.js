@@ -138,14 +138,14 @@ const WorkFlowStatus = () => {
         </div>
       </div>
       {showFilter && (
-        <Filter
-          showFilterHandler={showFilterHandler}
-          data={projectFilterData}
-        />
-        // <Modal>
-        //   {/* <ModalDelete /> */}
-        //   <SavedAsView />
-        // </Modal>
+        // <Filter
+        //   showFilterHandler={showFilterHandler}
+        //   data={projectFilterData}
+        // />
+        <Modal>
+          {/* <ModalDelete /> */}
+          <SavedAsView />
+        </Modal>
       )}
     </section>
   );
