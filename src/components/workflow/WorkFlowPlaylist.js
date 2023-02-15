@@ -34,9 +34,9 @@ const WorkFlowPlaylist = ({ data }) => {
       {/* playlist header */}
       <div className="playlist__header">
         <div className="playlist__header--left">
-          <h2>
+          <h2 className="heading__3">
             {data?.title}
-            <span>{` (${data?.count})`}</span>
+            <span className="heading__sub__3">{` (${data?.count})`}</span>
           </h2>
           <Image
             className="ml-8 cursor__pointer"

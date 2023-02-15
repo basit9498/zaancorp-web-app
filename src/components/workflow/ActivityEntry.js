@@ -27,7 +27,9 @@ const ActivityEntry = ({ showAddActivtyHandler }) => {
             <Selection />
           </div>
           <div className="selection__btn ml-8">
-            <button onClick={showAddActivtyHandler}>Add</button>
+            <button className="btn__text__2" onClick={showAddActivtyHandler}>
+              Add
+            </button>
           </div>
         </div>
       </div>

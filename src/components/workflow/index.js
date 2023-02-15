@@ -17,11 +17,6 @@ const Index = () => {
           })}
         </div>
       </div>
-      {/* <div className="workflow__body">
-        {playlistData?.map((activity) => {
-          return <WorkFlowPlaylist data={activity} />;
-        })}
-      </div> */}
     </div>
   );
 };

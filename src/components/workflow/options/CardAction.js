@@ -8,7 +8,7 @@ const CardAction = ({ setShowActionSortHandler }) => {
       {/* Header */}
       <div className="cardaction__header">
         <div className="sort__title">
-          <span>List Actions</span>
+          <span className="heading__5">List Actions</span>
         </div>
         <Image
           src={"/images/cs_close.svg"}
@@ -24,7 +24,7 @@ const CardAction = ({ setShowActionSortHandler }) => {
           return (
             <div className="cardaction__option">
               <div>
-                <span>{data}</span>
+                <span className="heading__sub__2">{data}</span>
               </div>
             </div>
           );

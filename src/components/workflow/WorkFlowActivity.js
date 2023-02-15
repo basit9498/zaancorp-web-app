@@ -19,13 +19,13 @@ const WorkFlowActivity = ({
                 (status) => status === data?.about
               )}`}
             ></span>
-            <p className="ml-4">{data?.about}</p>
+            <p className="heading__sub__4 ml-4">{data?.about}</p>
           </div>
           {data?.tag && <Image src={data?.tag} width={14} height={14} />}
         </div>
         {/* Activty Title */}
         <div className="acticity__title">
-          <h3>{data?.title}</h3>
+          <h3 className="heading__6">{data?.title}</h3>
         </div>
         {/* Status bar */}
         {(data?.status || data?.showStatus) && (
@@ -34,7 +34,7 @@ const WorkFlowActivity = ({
               data?.status.map((sts) => {
                 return (
                   <>
-                    <span>{sts}</span>
+                    <span className="heading__sub__6">{sts}</span>
                   </>
                 );
               })

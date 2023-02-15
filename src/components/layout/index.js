@@ -14,7 +14,7 @@ const Index = ({ children }) => {
         <div className="layout__mainbody">
           <Header />
           {/* Main Children */}
-          {/* <section className="layout__main--section">{children}</section> */}
+          <section className="layout__main--section">{children}</section>
         </div>
       </section>
     </main>

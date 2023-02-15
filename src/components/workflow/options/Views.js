@@ -9,7 +9,7 @@ const Views = ({ showViewHandler }) => {
       <div className="view__header">
         <div className="view__title">
           <Image src={"/images/view_save.svg"} width={18} height={18} />
-          <span>Views</span>
+          <span className="heading__5">Views</span>
         </div>
         <Image
           src={"/images/cs_close.svg"}
@@ -26,7 +26,7 @@ const Views = ({ showViewHandler }) => {
             <div className="view__option">
               <div>
                 <span className={`view__dot view__dot--color--${index}`}></span>
-                <span className="ml-16 ">{data}</span>
+                <span className="ml-16 heading__sub__2 ">{data}</span>
               </div>
               {index === 2 && (
                 <div>

@@ -1,35 +1,36 @@
 import { activityAboutStatus } from "@/src/helper/workflowdata/activityAboutStatus";
 import Image from "next/image";
 import React, { useState } from "react";
+import CheckBox from "./CheckBox";
 
-const Selection = () => {
+const FormSelection = () => {
   const [showList, setShowList] = useState(false);
   return (
-    <div className="selection__div">
+    <div className="formselection__div">
       <div
-        className="selection__header"
+        className="formselection__header"
         onClick={() => {
           setShowList(!showList);
         }}
       >
-        <span>Select Project</span>
+        <span>Enter or select name</span>
         <Image src={"/images/se_arrow chevron.svg"} width={16} height={16} />
       </div>
 
       {/*  */}
       {showList && (
-        <div className="selection__list">
+        <div className="formselection__list">
           {activityAboutStatus?.map((data, index) => {
             return (
-              <div
-                className="list__option--div"
-                onClick={() => {
-                  setShowList(!showList);
-                }}
-              >
+              <div className="list__option--div">
                 <div className="list__option">
-                  <span className={`__dot __dot--color--${index}`}></span>
-                  <p className="heading__sub__3 ml-6">{data} </p>
+                  <CheckBox />
+                  <Image
+                    src={"/images/header_user_1.svg"}
+                    width={24}
+                    height={24}
+                  />
+                  <p className="ml-6">{data} </p>
                 </div>
               </div>
             );
@@ -40,4 +41,4 @@ const Selection = () => {
   );
 };
 
-export default Selection;
+export default FormSelection;

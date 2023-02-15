@@ -17,7 +17,7 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
             <Image src={"/images/pr_filter.svg"} width={20} height={20} />
           )}
 
-          <span className="ml-8">Filters</span>
+          <span className="ml-8 heading__2">Filters</span>
         </div>
         <Image
           src={"/images/cs_close.svg"}
@@ -38,7 +38,7 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
         {/* Projects */}
         {data?.projects && (
           <div className="filter__list pt-20">
-            <h3>Project</h3>
+            <h3 className="heading__5">Project</h3>
             <div className="list__options">
               {data?.projects?.map((data) => {
                 return <CheckBox text={data} dotStatus={true} />;
@@ -46,7 +46,7 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
             </div>
             {type === "playlist" && (
               <div className="filter__sub--show mt-12 cursor__pointer">
-                <span>Show all...</span>
+                <span className="heading__sub__3">Show all...</span>
               </div>
             )}
           </div>
@@ -55,14 +55,14 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
         {/* Tags */}
         {data?.tags && (
           <div className="filter__list pt-24">
-            <h3>Tags</h3>
+            <h3 className="heading__5">Tags</h3>
             <div className="list__options">
               {data?.tags?.map((data) => {
                 return <CheckBox text={data} dotStatus={false} bg={true} />;
               })}
             </div>
             <div className="filter__sub--show mt-12 cursor__pointer">
-              <span>Show all...</span>
+              <span className="heading__sub__3">Show all...</span>
             </div>
           </div>
         )}
@@ -70,7 +70,7 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
         {/* Cards */}
         {data?.cards && (
           <div className="filter__list pt-24">
-            <h3>Card</h3>
+            <h3 className="heading__5">Card</h3>
             <div className="list__options">
               {data?.cards?.map((data) => {
                 return <CheckBox text={data} dotStatus={false} bg={false} />;
@@ -82,7 +82,7 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
         {/* Assigned To */}
         {data?.assigned && (
           <div className="filter__list pt-24">
-            <h3>Assigned To</h3>
+            <h3 className="heading__5">Assigned To</h3>
             <div className="list__options">
               {data?.assigned?.map((data) => {
                 return <CheckBox text={data.title} avatar={data.img} />;
@@ -96,13 +96,13 @@ const Filter = ({ showFilterHandler, type = "", data = [] }) => {
       <div className="filter__footer">
         <div className="footer__left">
           {type !== "playlist" && (
-            <button className="footer__btn">Save as View</button>
+            <button className="btn__text__1 footer__btn">Save as View</button>
           )}
         </div>
 
         <div className="footer__right">
-          <button className="footer__btn">Clear</button>
-          <button className="footer__btn ml-4">Apply</button>
+          <button className=" btn__text__1 footer__btn">Clear</button>
+          <button className="btn__text__1 footer__btn ml-4">Apply</button>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ const CheckBox = ({ text, dotStatus = false, bg = false, avatar = "" }) => {
         type="checkbox"
         value="value1"
       />
-      <label for="styled-checkbox-1" className={`${bgColor}`}>
+      <label for="styled-checkbox-1" className={`heading__sub__2 ${bgColor}`}>
         {dotStatus && activityAboutStatus.includes(text) && (
           <span
             className={`mr-6 __dot __dot--color--${activityAboutStatus.findIndex(

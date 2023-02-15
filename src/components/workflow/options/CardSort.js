@@ -13,7 +13,7 @@ const CardSort = ({ setShowCardSortHandler, type = "" }) => {
       <div className="cardsort__header">
         <div className="sort__title">
           <Image src={"/images/cs_Sort by.svg"} width={18} height={18} />
-          <span>Sort by</span>
+          <span className="heading__5">Sort by</span>
         </div>
         <Image
           src={"/images/cs_close.svg"}
@@ -29,7 +29,7 @@ const CardSort = ({ setShowCardSortHandler, type = "" }) => {
           return (
             <div className="cardsort__option">
               <div>
-                <span>{data}</span>
+                <span className="heading__sub__2">{data}</span>
               </div>
             </div>
           );

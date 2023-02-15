@@ -2,11 +2,15 @@ import { projectFilterData } from "@/src/helper/workflowdata/filterListData";
 import React, { useState } from "react";
 import IconButton from "../buttons/IconButton";
 import RoundIconButton from "../buttons/RoundIconButton";
+
+import Modal from "../modal/Modal";
 import UserAvatar from "../UserAvatar";
 import ActivityReminder from "./options/ActivityReminder";
 import CardSort from "./options/CardSort";
 import Filter from "./options/Filter";
 import Views from "./options/Views";
+import { ModalDelete } from "../modal/ModalDelete";
+import SavedAsView from "../modal/SavedAsView";
 
 const WorkFlowStatus = () => {
   const [showFilter, setShowFilter] = useState(false);
@@ -138,6 +142,10 @@ const WorkFlowStatus = () => {
           showFilterHandler={showFilterHandler}
           data={projectFilterData}
         />
+        // <Modal>
+        //   {/* <ModalDelete /> */}
+        //   <SavedAsView />
+        // </Modal>
       )}
     </section>
   );

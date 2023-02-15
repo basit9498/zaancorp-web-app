@@ -52,7 +52,6 @@
 **/
 
 $primary-color: #0e8cff;
-
 $main-body-color: #f9fbfe;
 $main-white-color: #ffffff;
 $main-black-color: #070f21;
@@ -62,52 +61,16 @@ $main-gray-400-color: rgba(7, 15, 33, 0.04);
 /*
     Screens Size
 **/
-$fxl-screen: 1390px;
-// $xl-screen: 1280px;
-// $lg-screen: 1024px;
-// $xmd-screen: 801px;
-// $md-screen: 768px;
-// $sm-screen: 600px;
-// $xs-screen: 425px;
-// $xxs-screen: 375px;
+$xl-screen: 1200px;
+$lg-screen: 1024px;
 
-@mixin fxl-screen {
-  @media screen and (min-width: $fxl-screen) {
+@mixin xl-screen {
+  @media screen and (max-width: $xl-screen) {
     @content;
   }
 }
-// @mixin xl-screen {
-//   @media screen and (min-width: $xl-screen) {
-//     @content;
-//   }
-// }
-// @mixin lg-screen {
-//   @media screen and (min-width: $lg-screen) {
-//     @content;
-//   }
-// }
-// @mixin xmd-screen {
-//   @media screen and (min-width: $xmd-screen) {
-//     @content;
-//   }
-// }
-// @mixin md-screen {
-//   @media screen and (min-width: $md-screen) {
-//     @content;
-//   }
-// }
-// @mixin sm-screen {
-//   @media screen and (min-width: $sm-screen) {
-//     @content;
-//   }
-// }
-// @mixin xs-screen {
-//   @media screen and (min-width: $xs-screen) {
-//     @content;
-//   }
-// }
-// @mixin xxs-screen {
-//   @media screen and (min-width: $xxs-screen) {
-//     @content;
-//   }
-// }
+@mixin lg-screen {
+  @media screen and (max-width: $lg-screen) {
+    @content;
+  }
+}
