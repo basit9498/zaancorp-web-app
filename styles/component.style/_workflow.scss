@@ -549,6 +549,9 @@
 // Filter (card and project)
 
 .filter__project {
+  @include xs-screen() {
+    width: 304px;
+  }
   top: 0px;
   right: 0px;
   width: 374px;
@@ -590,7 +593,7 @@
       height: calc(100vh - 400px);
     }
     @include xs-screen() {
-      height: calc(100vh - 500px);
+      // height: calc(100vh - 500px);
     }
     height: calc(100vh - 300px);
   }
@@ -764,6 +767,9 @@
 
   // ar__activty
   .ar__activty {
+    @media screen and (max-width: 1280px) {
+      max-height: 370px;
+    }
     padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 16px;

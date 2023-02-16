@@ -1,3 +1,7 @@
+import {
+  playListFilterData,
+  saveUser,
+} from "@/src/helper/workflowdata/filterListData";
 import Image from "next/image";
 import React from "react";
 import FormSelection from "../Form/FormSelection";
@@ -52,7 +56,7 @@ const SavedAsView = ({ modelHandler }) => {
         {/* Share with others */}
         <div className="model__inputcontrol mt-16">
           <p className="btn__text__3 mb-8">Share with others</p>
-          <FormSelection />
+          <FormSelection data={saveUser} />
         </div>
       </div>
 

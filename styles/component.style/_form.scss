@@ -40,7 +40,7 @@
     justify-content: space-between;
     padding: 9px 8px;
     width: 100%;
-    height: 34px;
+    height: 46px;
 
     background: $main-white-color;
     border: 1px solid $main-gray-color;
@@ -52,8 +52,16 @@
   }
 
   .formselection__list {
+    @include sm-screen() {
+      height: 80px;
+      overflow-y: scroll;
+      @include scroll-y($width: 4px, $radius: 3px);
+    }
+    height: 160px;
+    overflow-y: scroll;
+    @include scroll-y($width: 4px, $radius: 3px);
     position: absolute;
-    top: 34px;
+    top: 48px;
     left: 0px;
     width: 100%;
     background: $main-white-color;

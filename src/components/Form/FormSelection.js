@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import CheckBox from "./CheckBox";
 
-const FormSelection = () => {
+const FormSelection = ({ data }) => {
   const [showList, setShowList] = useState(false);
   return (
     <div className="formselection__div">
@@ -20,17 +20,11 @@ const FormSelection = () => {
       {/*  */}
       {showList && (
         <div className="formselection__list">
-          {activityAboutStatus?.map((data, index) => {
+          {data?.map((data, index) => {
             return (
               <div className="list__option--div">
                 <div className="list__option">
-                  <CheckBox />
-                  <Image
-                    src={"/images/header_user_1.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <p className="ml-6">{data} </p>
+                  <CheckBox text={data.title} avatar={data.img} />
                 </div>
               </div>
             );

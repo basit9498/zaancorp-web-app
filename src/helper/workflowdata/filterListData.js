@@ -40,3 +40,12 @@ export const playListFilterData = {
     { title: "Jacob Jones", img: "/images/filter_as_4.svg" },
   ],
 };
+
+export const saveUser = [
+  { title: "Savannah Nguyen", img: "/images/filter_as_1.svg" },
+  { title: "Wade Warren", img: "/images/filter_as_2.svg" },
+  { title: "Jane Cooper", img: "/images/filter_as_3.svg" },
+  { title: "Jacob Jones", img: "/images/filter_as_4.svg" },
+  { title: "Jacob Jones", img: "/images/filter_as_4.svg" },
+  { title: "Jacob Jones", img: "/images/filter_as_4.svg" },
+];
