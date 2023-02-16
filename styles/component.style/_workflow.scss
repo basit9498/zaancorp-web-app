@@ -440,10 +440,18 @@
 
 // Card Sort
 .cardsort__div--playlist {
+  @include md-screen() {
+    top: 40px;
+    left: 0px;
+  }
   top: 0px;
   left: 196px;
 }
 .cardsort__div--main {
+  @include xs-screen() {
+    top: 40px;
+    left: 20px;
+  }
   top: 40px;
   left: 120px;
 }
@@ -542,12 +550,15 @@
 
 .filter__project {
   top: 0px;
-  right: 0pc;
+  right: 0px;
   width: 374px;
 }
 .filter__playlistcard {
+  @include sm-screen() {
+    right: -74px;
+  }
   top: 0px;
-  right: 0pc;
+  right: -200px;
   width: 286px;
 }
 .filter__section {
@@ -572,9 +583,24 @@
     }
   }
   .filter__group--height--playlist {
+    @include md-screen() {
+      height: calc(100vh - 360px);
+    }
+    @include sm-screen() {
+      height: calc(100vh - 400px);
+    }
+    @include xs-screen() {
+      height: calc(100vh - 500px);
+    }
     height: calc(100vh - 300px);
   }
   .filter__group--height--project {
+    @include sm-screen() {
+      height: calc(100vh - 250px);
+    }
+    @include xs-screen() {
+      height: calc(100vh - 300px);
+    }
     height: calc(100vh - 200px);
   }
   .filter__group {
@@ -641,10 +667,16 @@
 //ActivityReminder
 
 .ar__div--ach--sn {
+  @include lg-screen() {
+    left: 0px;
+  }
   top: 42px;
   left: -210px;
 }
 .ar__div--pined {
+  @include lg-screen() {
+    left: 0px;
+  }
   top: 42px;
   left: -264px;
 }
@@ -746,7 +778,17 @@
 }
 
 // Views
+.view__div--zindex-- {
+  display: none;
+}
 .view__div {
+  @include lg-screen() {
+    left: 0px;
+  }
+  @include xs-screen() {
+    width: 269px;
+  }
+
   position: absolute;
   top: 42px;
   left: -188px;

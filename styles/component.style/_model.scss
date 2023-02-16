@@ -45,6 +45,9 @@
   background-color: $main-white-color;
   border-radius: 8px;
   .delmodal__body {
+    @include xs-screen() {
+      padding-bottom: 36px;
+    }
     padding-top: 24px;
     padding-bottom: 54px;
   }
@@ -74,12 +77,14 @@
     .model__inputcontrol {
       .inputfield__detail {
         display: flex;
-        align-items: center;
+        // align-items: center;
         justify-content: space-between;
         border: 1px solid rgba(7, 15, 33, 0.1);
         border-radius: 8px;
+        height: 46px;
         .inputfield__div {
-          padding: 15px 16px;
+          padding: 0px 16px;
+          align-self: center;
           input {
             border: none;
             outline: none;
@@ -87,16 +92,37 @@
         }
 
         .input__right--side {
+          // border: 1px solid red;
           border-left: 1px solid rgba(7, 15, 33, 0.1);
           width: 62px;
           display: flex;
           align-items: center;
         }
         .box__black {
-          width: 24px;
-          height: 24px;
-          background-color: $main-black-color;
-          border-radius: 4px;
+          input {
+            appearance: none !important;
+            width: 28px;
+            height: 28px;
+            cursor: default;
+
+            background-color: transparent;
+            color: transparent;
+            border: none !important;
+            border-image: none !important;
+            border-radius: 4px;
+            // padding: 1px 2px;
+          }
+          // span {
+          //   width: 24px;
+          //   height: 24px;
+          //   display: inline-block;
+          //   background-color: $main-black-color;
+          //   border-radius: 4px;
+          // }
+          // width: 24px;
+          // height: 24px;
+          // background-color: $main-black-color;
+          // border-radius: 4px;
         }
       }
     }

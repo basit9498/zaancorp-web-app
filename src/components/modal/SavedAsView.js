@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import FormSelection from "../Form/FormSelection";
 
-const SavedAsView = () => {
+const SavedAsView = ({ modelHandler }) => {
   return (
     <div className="savemodal__div">
       <div className="modal__header">
@@ -21,6 +21,7 @@ const SavedAsView = () => {
             width={20}
             height={20}
             className="cursor__pointer"
+            onClick={modelHandler}
           />
         </div>
       </div>
@@ -33,7 +34,11 @@ const SavedAsView = () => {
               <input placeholder="Enter Name" />
             </div>
             <div className="input__right--side">
-              <span className="box__black ml-8"></span>
+              <lable className="box__black ml-8">
+                <input type={"color"} />
+                <span className=""></span>
+              </lable>
+              {/* <span className="box__black ml-8"></span> */}
               <Image
                 src={"/images/header_user_option.svg"}
                 width={11}
@@ -52,7 +57,9 @@ const SavedAsView = () => {
       </div>
 
       <div className="modal__footer savemodal__footer">
-        <button className="modal_btn  btn__text__2">Save</button>
+        <button onClick={modelHandler} className="modal_btn  btn__text__2">
+          Save
+        </button>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export const ModalDelete = () => {
+export const ModalDelete = ({ modelHandler }) => {
   return (
     <div className="delmodal__div">
       <div className="modal__header">
@@ -14,7 +14,7 @@ export const ModalDelete = () => {
             width={20}
             height={20}
             className="cursor__pointer"
-            // onClick={showFilterHandler}
+            onClick={modelHandler}
           />
         </div>
       </div>
@@ -25,8 +25,12 @@ export const ModalDelete = () => {
       </div>
 
       <div className="modal__footer delmodal__footer">
-        <button className="modal_btn mr-12 btn__text__2">Cancel</button>
-        <button className="modal_btn btn__text__2">Delete</button>
+        <button className="modal_btn mr-12 btn__text__2" onClick={modelHandler}>
+          Cancel
+        </button>
+        <button className="modal_btn btn__text__2" onClick={modelHandler}>
+          Delete
+        </button>
       </div>
     </div>
   );
