@@ -130,6 +130,78 @@ export const playlistData = [
         },
         created: "Created 3 days ago",
       },
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+
+        options: {
+          //   message: 12,
+          checklist: "8/9",
+          link: 2,
+        },
+        created: "Created 3 days ago",
+      },
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+
+        options: {
+          //   message: 12,
+          checklist: "8/9",
+          link: 2,
+        },
+        created: "Created 3 days ago",
+      },
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+
+        options: {
+          //   message: 12,
+          checklist: "8/9",
+          link: 2,
+        },
+        created: "Created 3 days ago",
+      },
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+
+        options: {
+          //   message: 12,
+          checklist: "8/9",
+          link: 2,
+        },
+        created: "Created 3 days ago",
+      },
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+
+        options: {
+          //   message: 12,
+          checklist: "8/9",
+          link: 2,
+        },
+        created: "Created 3 days ago",
+      },
+      {
+        about: "LeadBank",
+        title: "Design a website",
+        tag: "/images/ac_searching_user.svg",
+
+        options: {
+          //   message: 12,
+          checklist: "8/9",
+          link: 2,
+        },
+        created: "Created 3 days ago",
+      },
     ],
   },
 
@@ -175,183 +247,6 @@ export const playlistData = [
     ],
   },
 
-  // {
-  //   id: 5,
-  //   title: "Completed",
-  //   count: 1,
-  //   activity: [
-  //     {
-  //       about: "LeadBank",
-  //       title: "Design a website",
-  //       tag: "/images/ac_searching_user.svg",
-  //       status: ["api.contactrm.com", "api.contactrm"],
-  //       created: "Created 3 days ago",
-  //     },
-  //   ],
-  // },
-
-  {
-    id: 5,
-    title: "Completed",
-    count: 1,
-    activity: [
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Completed",
-    count: 1,
-    activity: [
-      {
-        about: "LeadBank",
-        title: "Design a website",
-        tag: "/images/ac_searching_user.svg",
-        status: ["api.contactrm.com", "api.contactrm"],
-        created: "Created 3 days ago",
-      },
-    ],
-  },
   {
     id: 5,
     title: "Completed",
