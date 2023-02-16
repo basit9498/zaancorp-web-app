@@ -27,12 +27,7 @@
   }
 }
 .aside__section {
-  // @include lg-screen() {
-  //   // background-color: #b0a1df;
-  // }
-
   @include lg-screen() {
-    // border: 1px solid red;
     position: fixed;
     z-index: 99;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -73,6 +68,9 @@
       margin-top: 16px;
       padding-top: 16px;
       border-top: 1px solid rgba(7, 15, 33, 0.08);
+    }
+    .menu__item--selected {
+      background-color: #f6f6ff;
     }
     .menu__item {
       padding: 12px 15px;

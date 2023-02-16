@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const SideBar = () => {
   const [showSideBar, setShowSideBar] = useState(false);
+  const [selectMenu, setSelectedMenu] = useState("Workflow");
   return (
     <aside
       className={`aside__section scroll__bar ${
@@ -28,8 +29,18 @@ const SideBar = () => {
       <div className="aside__menu">
         {SideBarMenuData?.map((item) => {
           return (
-            <div className="menu__item">
-              <Link className="menu__item--link" href={"/"}>
+            <div
+              className={`menu__item ${
+                selectMenu === item.title && "menu__item--selected"
+              }  `}
+            >
+              <Link
+                className="menu__item--link"
+                href={"/"}
+                onClick={() => {
+                  setSelectedMenu(item.title);
+                }}
+              >
                 <Image src={item.imagePath} width={22} height={22} />
                 <span>{item.title}</span>
               </Link>
