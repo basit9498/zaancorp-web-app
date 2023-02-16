@@ -52,6 +52,9 @@
   }
 
   .formselection__list {
+    @media screen and (max-width: 1280px) {
+      height: 100px;
+    }
     @include sm-screen() {
       height: 80px;
       overflow-y: scroll;
